@@ -1,0 +1,73 @@
+.box {width:300px; height:300px; background-color:#000; margin:0 auto;}
+
+/*Box 1 transitions*/
+    .b-1 .box {animation: rbfade-in 1s; animation-fill-mode: both;}
+    .b-1 .box:hover {animation: rbfade-out 1s; animation-fill-mode: both;}
+
+    @keyframes rbfade-in{
+        from {background-color: royalblue;}
+        to {background-color: red}
+    }
+
+    @keyframes rbfade-out{
+        from {background-color: red;}
+        to {background-color: royalblue}
+    }
+
+
+/*Box 2 transitions*/
+    .b-2 .box {background-color:#795548; animation: rot135-in 2s; animation-fill-mode: both;}
+    .b-2 .box:hover {animation: rot135-out 2s; animation-fill-mode: both;}
+
+    @keyframes rot135-in {
+        from {transform: rotate(135deg);}
+        to {transform: rotate(0deg);}
+    }
+
+    @keyframes rot135-out {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(135deg);}
+    }
+
+/*Box 3 transitions*/
+    .b-3 .box {background-color:#FF7043; animation: skew20-in 2s; animation-fill-mode: both;} 
+    .b-3 .box:hover {animation: skew20-out 2s; animation-fill-mode: both;}
+
+    @keyframes skew20-in {
+        from {transform: skewx(-20deg);}
+        to {transform: skewx(0deg);}
+    }
+
+    @keyframes skew20-out {
+        from {transform: skewx(0deg);}
+        to {transform: skewx(-20deg);}
+    }
+
+/*Box 4 transitions*/
+    .b-4 .box {background-color:#00796B; animation: shrink-in 2s; animation-fill-mode: both;}
+    .b-4 .box:hover {animation: shrink-out 2s; animation-fill-mode: both;}
+
+    @keyframes shrink-in {
+        from {transform: scale(.5);}
+        to {transform: scale(1);}
+    }
+
+    @keyframes shrink-out {
+        from {transform: scale(1);}
+        to {transform: scale(.5);}
+    }
+
+
+/*Box 5 transitions*/
+    .b-5 .box {background-color:#01579B; animation: grow-in 2s; animation-fill-mode: both;}
+    .b-5 .box:hover {animation: grow-out 2s; animation-fill-mode: both;}
+
+    @keyframes grow-in {
+        from {transform: scale(2);}
+        to {transform: scale(1);}
+    }
+
+    @keyframes grow-out {
+        from {transform: scale(1);}
+        to {transform: scale(2);}
+    }

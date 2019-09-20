@@ -1,0 +1,97 @@
+/*navs.html Transition 1*/
+    .n-1 nav {background-color:#3F51B5;}
+    .n-1 a {color:#fff; animation: navfade-in .5s; animation-fill-mode: both;}
+    .n-1 a:hover {animation: navfade-out .5s; animation-fill-mode: both;}
+
+        @keyframes navfade-in{
+            from {background-color: white; color: #3F51B5;}
+            to {background-color: #3F51B5;}
+        }
+
+        @keyframes navfade-out{
+            from {background-color: #3F51B5;;}
+            to {background-color: white; color: #3F51B5;}
+        }
+
+/*navs.html Transition 2*/
+    .n-2 nav, .n-2 nav a:link, .n-2 nav a:visited, .n-2 nav a:hover, .n-2 nav a:active  {background-color:#2196F3; color: white;}
+    .n-2 a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        margin-bottom: 15px;
+        margin-top: -14px;
+        background: white;
+        transition: width .3s;
+    }
+
+    .n-2 a:hover::after {width: 100%;}
+
+
+
+/*navs.html Transition 3*/
+    .n-3 nav {background-color:#009688;}
+
+    .n-3 a {position:relative;}
+
+    .n-3 nav, .n-3 nav a:link, .n-3 nav a:visited, .n-3 nav a:hover, .n-3 nav a:active  {background-color:#009688; color: white;}
+    .n-3 a::before {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 1px;
+        margin-bottom: -15px;
+        margin-top: 10px;
+        background: white;
+        transition: width .3s;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .n-3 a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        margin-bottom: 15px;
+        margin-top: -14px;
+        background: white;
+        transition: width .3s;
+    }
+
+    .n-3 a:hover::before {width: 100%;}
+
+    .n-3 a:hover::after {width: 100%;}
+    
+/*navs.html Transition 4*/
+    .n-4 nav {background-color:#2E7D32;}
+    .n-4 a {color:#fff;}
+    .n-4 a span {position:relative; z-index:1;}
+
+    .n-4 a span:hover {
+        background-color: rgb(99, 146, 101);
+        display: block;
+        position: relative;
+    }
+
+/*navs.html Transition 5*/
+    .n-5 ul {background-color:#FFD54F;}
+    .n-5 a {color:#000;}
+    .n-5 a span {display:block;}
+
+    .n-5 a {animation: navpush-in .5s; animation-fill-mode: both;}
+    .n-5 a:hover {animation: navpush-out .5s; animation-fill-mode: both;}
+
+        @keyframes navpush-in{
+            from {padding-left: 30px;}
+            to {padding-left: 15px;}
+        }
+
+        @keyframes navpush-out{
+            from {padding-left: 15px;}
+            to {padding-left: 30px;}
+        }
+    
+

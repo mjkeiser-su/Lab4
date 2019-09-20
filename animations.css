@@ -1,0 +1,35 @@
+.box {width:300px; height:300px; background-color:#000; margin:0 auto;}
+
+/*a-1 Animation*/
+
+.a-1 .box {animation: fade-in 3s infinite;}
+
+    @keyframes fade-in{
+        0% {background-color: red;}
+        33% {background-color: white;}
+        66% {background-color: blue;}
+        100% {background-color: red;}
+    }
+/*a-2 Animation*/
+
+.a-2 .box {animation: bounce 4s infinite;}
+
+    @keyframes bounce {
+        0% {margin-left: 0px;}
+        50% {margin-left: 100%;}
+        100% {margin-left: 0px;}
+    }
+
+/*a-3 Animation*/
+
+.a-3 .box {animation: crazy 10s infinite;}
+
+    @keyframes crazy {
+        0% {transform: translateX(0px)}
+        20% {transform: translateX(100px);}
+        35% {transform: rotate(45deg)}
+        50% {transform: scale(1.5);}
+        65% {transform: scale(1);}
+        80% {transform: rotate(0deg)}
+        100% {transform: translateX(-100px)}
+    }
